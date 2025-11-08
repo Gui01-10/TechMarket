@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | TechMarket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --laranja: #FFA400;
+      --preto: #0A0A0A;
+    }
+
+    body {
+      background-color: var(--preto);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      background-color: var(--preto);
+      border-bottom: 2px solid var(--laranja);
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 2px solid var(--laranja);
+    }
+
+    .form-control {
+      background-color: #111;
+      border: 1px solid var(--laranja);
+      color: white;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #ffb733;
+    }
+
+    .btn-laranja {
+      background-color: var(--laranja);
+      color: var(--preto);
+      border: none;
+    }
+
+    .btn-laranja:hover {
+      background-color: #ffb733;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.jpeg" alt="TechMarket Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5 text-center">
+    <div class="container">
+      <h1 style="color: var(--laranja);">Fale Conosco</h1>
+      <p class="lead mt-3">Tem alguma dúvida, sugestão ou quer saber mais? Envie sua mensagem!</p>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <form action="https://formsubmit.co/melllo.2210@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nova mensagem do site TechMarket!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://localhost:5500/obrigado.html">
+          
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" name="Nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="Email" placeholder="exemplo@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" name="Mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-laranja w-100">Enviar</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="img/tmarket.jpeg" alt="TechMarket" height="40" class="mb-2"><br>
+    <p class="mb-2">&copy; 2025 TechMarket. Todos os direitos reservados.</p>
+    
+    <div>
+      <a href="https://www.instagram.com/oficial_techmarket?igsh=OGl2dzA1eWNxcTZi&utm_source=qr" target="_blank" 
+         style="color: var(--laranja); text-decoration: none; font-weight: 500;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" 
+             class="bi bi-instagram" viewBox="0 0 16 16" style="margin-right: 5px;">
+          <path d="M8 0C5.741 0 5.468.01 4.673.048c-.794.038-1.338.174-1.82.37a3.64 3.64 0 0 0-1.314.858 3.64 3.64 0 0 0-.858 1.314c-.196.482-.332 1.026-.37 1.82C.01 5.468 0 5.741 0 8s.01 2.532.048 3.327c.038.794.174 1.338.37 1.82.2.482.46.898.858 1.314.416.398.832.658 1.314.858.482.196 1.026.332 1.82.37.795.038 1.068.048 3.327.048s2.532-.01 3.327-.048c.794-.038 1.338-.174 1.82-.37a3.64 3.64 0 0 0 1.314-.858 3.64 3.64 0 0 0 .858-1.314c.196-.482.332-1.026.37-1.82.038-.795.048-1.068.048-3.327s-.01-2.532-.048-3.327c-.038-.794-.174-1.338-.37-1.82a3.64 3.64 0 0 0-.858-1.314A3.64 3.64 0 0 0 13.82.418c-.482-.196-1.026-.332-1.82-.37C10.532.01 10.259 0 8 0zm0 1.439c2.216 0 2.478.008 3.35.048.708.033 1.091.153 1.346.255.339.132.58.29.835.544.254.255.412.496.544.835.102.255.222.638.255 1.346.04.872.048 1.134.048 3.35s-.008 2.478-.048 3.35c-.033.708-.153 1.091-.255 1.346a2.2 2.2 0 0 1-.544.835 2.2 2.2 0 0 1-.835.544c-.255.102-.638.222-1.346.255-.872.04-1.134.048-3.35.048s-2.478-.008-3.35-.048c-.708-.033-1.091-.153-1.346-.255a2.2 2.2 0 0 1-.835-.544 2.2 2.2 0 0 1-.544-.835c-.102-.255-.222-.638-.255-1.346-.04-.872-.048-1.134-.048-3.35s.008-2.478.048-3.35c.033-.708.153-1.091.255-1.346a2.2 2.2 0 0 1 .544-.835 2.2 2.2 0 0 1 .835-.544c.255-.102.638-.222 1.346-.255.872-.04 1.134-.048 3.35-.048z"/>
+          <path d="M8 3.887a4.113 4.113 0 1 0 0 8.226 4.113 4.113 0 0 0 0-8.226zm0 6.787a2.674 2.674 0 1 1 0-5.348 2.674 2.674 0 0 1 0 5.348z"/>
+          <circle cx="12.5" cy="3.5" r="1.2"/>
+        </svg>
+        @techmarket
+      </a>
+    </div>
+  </footer>
+  
+</body>
+</html>

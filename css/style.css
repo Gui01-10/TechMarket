@@ -1,0 +1,53 @@
+/* Cores principais */
+:root {
+    --laranja: #ff6600;
+    --preto: #1a1a1a;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--preto) !important;
+  }
+  
+  .text-orange {
+    color: var(--laranja) !important;
+  }
+  
+  /* Botão laranja */
+  .btn-orange {
+    background-color: var(--laranja);
+    color: white;
+    border: none;
+    transition: 0.3s;
+  }
+  .btn-orange:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Hero section */
+  .hero {
+    position: relative;
+    background: url("https://via.placeholder.com/1600x700/1a1a1a/ffffff?text=Meu+Negócio") center/cover no-repeat;
+    height: 100vh;
+  }
+  .hero .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .hero .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--preto);
+  }
+  
